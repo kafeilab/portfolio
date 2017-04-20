@@ -1,0 +1,15 @@
+.cv-right {
+	padding-top: 5px;
+}
+
+.cv-left {
+	padding-top: 5px;
+	margin-bottom: 40px;
+	border-top: 1px solid #FE5000;
+}
+.cv-left > p {
+	margin-bottom: 0px;
+}
+.cv-left > p:nth-child(even) {
+	padding-left: 30px;
+}

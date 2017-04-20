@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+	padding-top: 70px; /* for navbar fixed top */
+	font-family: 'Source Code Pro', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+.app-color {
+	color: #FE5000;
+}
+
+h1 {
+	color: #FE5000;
+}
+
+.line-1 {
+	width: 100%;
+	height: 1px;
+	background-color: #FE5000;
+}
+.line-2 {
+	width: 100%;
+	height: 2px;
+	background-color: #FE5000;
+}
+.line-3 {
+	width: 100%;
+	height: 3px;
+	background-color: #FE5000;
+}
