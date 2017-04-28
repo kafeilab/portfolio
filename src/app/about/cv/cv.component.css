@@ -1,15 +1,15 @@
-.cv-right {
-	padding-top: 5px;
+.cv {
+	margin-top: 100px;
 }
-
-.cv-left {
-	padding-top: 5px;
-	margin-bottom: 40px;
-	border-top: 1px solid #FE5000;
+.cv  .heading {
+	color: #FE5000;
 }
-.cv-left > p {
+.cv .detail {
 	margin-bottom: 0px;
 }
-.cv-left > p:nth-child(even) {
+.cv .bold {
+	font-weight: bold;
+}
+.cv .indent {
 	padding-left: 30px;
 }

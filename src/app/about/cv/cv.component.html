@@ -1,24 +1,12 @@
-<h1>CV Component</h1>
-<div>
-	<div class="row">
-		<div class="col-sm-4 col-md-3 cv-right">
-			<strong>EDUCATION</strong>
-		</div>
-		<div class="col-sm-7 col-md-8 cv-left">
-			<p><strong>St Pius Culinary and Business Centre</strong></p>
-			<p>Computer Graphics, May 2016 - Present</p>
-		</div>
+<div class="col-sm-7 col-md-8 cv">
+	
+	<div *ngFor="let cv of cvs">
+		<p class="heading"><strong>{{cv.heading}}</strong></p>
+		<div class="line-1"></div>
+		<br>
+		<p *ngFor="let d of cv.detail" [ngClass]="{'detail': true, 'bold': d.bold, 'indent': d.indent}">{{d.value}}</p>
+		<br>
+		<br>
 	</div>
 	
-	<div class="row">
-		<div class="col-sm-4 col-md-3 cv-right">
-			<strong>COMPETENCIES</strong>
-		</div>
-		<div class="col-sm-7 col-md-8 cv-left">
-			<p><strong>Web Development</strong></p>
-			<p>Adobe Dreamweaver, Adobe Muse, HTML, CSS, JavaScript</p>
-			<p><strong>Design</strong></p>
-			<p>Adobe Illustrator, Adobe Photoshop, Adobe InDesign</p>
-		</div>
-	</div>
 </div>

@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderModule } from './header/header.module';
+import { FooterModule } from './footer/footer.module';
 import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './pagenotfound/page-not-found.component';
+import { AppSerice } from './app.service';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,12 @@ import { PageNotFoundComponent } from './pagenotfound/page-not-found.component';
     HttpModule,
     
     HeaderModule,
+    FooterModule,
     HomeModule,
     AboutModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AppSerice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

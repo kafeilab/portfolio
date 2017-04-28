@@ -1,0 +1,25 @@
+.footer {
+	height: 250px;
+	background-color: #FE5000;
+}
+.footer .container {
+	padding-top: 50px;
+}
+.footer .line {
+	background-color: white;
+	height: 1px;
+}
+
+.footer h3, .footer p {
+	color: white;
+}
+
+
+
+.copyright {
+	background-color: #FF8200;
+	color: white;
+}
+.copyright div {
+	padding-top: 5px;
+}

@@ -1,13 +1,30 @@
-<h1>WHO AM I?</h1>
-<ul class="nav nav-tabs nav-justified">
-	<li role="presentation" routerLinkActive="active">
-		<a routerLink="/about">About Me</a>
-	</li>
-	<li role="presentation" routerLinkActive="active">
-		<a routerLink="/about/coverletter">Cover Letter</a>
-	</li>
-	<li role="presentation" routerLinkActive="active">
-		<a routerLink="/about/cv">CV</a>
-	</li>
-</ul>
-<router-outlet></router-outlet>
+<div class="container">
+	<h1>WHO AM I?</h1>
+	<ul class="nav nav-tabs nav-justified">
+		<!-- <li role="presentation" routerLinkActive="active">
+			<a routerLink="/about">About Me</a>
+		</li> -->
+		<li role="presentation" routerLinkActive="active">
+			<a routerLink="./coverletter">Cover Letter</a>
+		</li>
+		<li role="presentation" routerLinkActive="active">
+			<a routerLink="./cv">CV</a>
+		</li>
+	</ul>
+	
+	<!-- <div class="line-1"></div> -->
+	<div class="row">
+		<div class="col-sm-4 col-md-3 ab-left">
+			<h1>{{app.getFullName()}}</h1>
+			<h2>{{app.job}}</h2>
+	
+			<div class="line-3"></div>
+	
+			<p>{{app.address}}</p>
+			<p>{{app.postalCode}}</p>
+			<p class="app-color">{{app.phone}}</p>
+			<p class="app-color">{{app.email}}</p>
+		</div>
+		<router-outlet></router-outlet>
+	</div>
+</div>

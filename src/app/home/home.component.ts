@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { HomeService } from './home.service';
 
 @Component( {
     selector: 'p-home',
@@ -7,6 +9,14 @@ import { Component } from '@angular/core';
         'home.component.css'
     ]
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+    
+    constructor(public homeService: HomeService) { }
+    
+    carousels: string[];
+    
+    ngOnInit(): void {
+        this.carousels = this.homeService.getCarousels();
+    }
 
 }
