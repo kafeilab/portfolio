@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CoverLetterService } from './cover-letter.service';
-import { CoverLetter } from './cover-letter.model';
+import { AboutText } from '../about.model';
 
 @Component( {
     selector: 'p-cover-letter',
@@ -10,7 +10,7 @@ import { CoverLetter } from './cover-letter.model';
 })
 export class CoverLetterComponent implements OnInit {
     
-    coverLetter: CoverLetter;
+    coverLetter: AboutText;
 
     constructor(
         private cvService: CoverLetterService

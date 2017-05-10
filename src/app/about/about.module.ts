@@ -2,26 +2,28 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AboutRoutingModule } from './about-routing.module';
+import { ElementModule } from '../element/element.module';
 
 import { AboutComponent } from './about.component';
-import { CoverLetterComponent } from './coverletter/cover-letter.component';
+import { MeComponent } from './me/me.component';
 import { CVComponent } from './cv/cv.component';
 
-import { CoverLetterService } from './coverletter/cover-letter.service';
+import { MeService } from './me/me.service';
 import { CVService } from './cv/cv.service';
 
 @NgModule( {
     declarations: [
         AboutComponent,
-        CoverLetterComponent,
+        MeComponent,
         CVComponent
     ],
     imports: [
         CommonModule,
-        AboutRoutingModule
+        AboutRoutingModule,
+        ElementModule
     ],
     providers: [
-        CoverLetterService,
+        MeService,
         CVService
     ]
 })

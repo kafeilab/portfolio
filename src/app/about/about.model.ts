@@ -1,4 +1,4 @@
-export class CoverLetter {
+export class AboutText {
 
     constructor(
         public paragraphs: string[],

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 
-import { CoverLetter } from './cover-letter.model';
+import { AboutText } from '../about.model';
 
 @Injectable()
 export class CoverLetterService {
 
-    public getCoverLetter(): CoverLetter {
+    public getCoverLetter(): AboutText {
         return cv;
     }
 
@@ -21,4 +21,4 @@ const p: string[] = [
 ];
 const s: string = "BUNLONG TAING";
 
-const cv: CoverLetter = new CoverLetter( p, s );
+const cv: AboutText = new AboutText( p, s );

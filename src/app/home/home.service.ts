@@ -4,12 +4,14 @@ import { Injectable } from '@angular/core';
 export class HomeService {
 
 //    path: string = '../../../assets/';
-    path: string = '/assets/';
+    path: string = '/assets/banner/';
     carousels: string[] = [
-        'Image01.JPG',
-        'Image02.JPG',
-        'Image03.JPG',
-        'Image04.JPG'
+        'WineBotterBannerWeb-01.jpg',
+        'NarrowsBrochure-01.jpg',
+        'VilaJoya-01.jpg',
+        'DavidTea-01.jpg',
+        'A_W-01.jpg',
+        'Packaging-01.jpg'
     ];
 
     getCarousels(): string[] {

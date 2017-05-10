@@ -1,21 +1,23 @@
 <div id="p-carousel" class="carousel slide" data-ride="carousel">
+	
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
-		<li data-target="#p-carousel" data-slide-to="0"
-			class="active"></li>
+		<li 
+			*ngFor="let img of carousels; let f = first; let i = index;"
+			data-target="#p-carousel"
+			[ngClass]="{ 'active': f}"
+			data-slide-to="i"></li>
+			
+		<!-- <li data-target="#p-carousel" data-slide-to="0" class="active"></li>
 		<li data-target="#p-carousel" data-slide-to="1"></li>
-		<li data-target="#p-carousel" data-slide-to="2"></li>
+		<li data-target="#p-carousel" data-slide-to="2"></li> -->
 	</ol>
 
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
-		<!-- <div class="item active">
-			<img src="..." alt="...">
-			<div class="carousel-caption">...</div>
-		</div> -->
 		<div *ngFor="let image of carousels; let f = first;" [ngClass]="{ 'item': true, 'active': f }">
-			<img src="{{image}}" alt="" style="margin: 0 auto;max-height: 500px;min-width: 320px;">
-			<div class="carousel-caption">{{image}}</div>
+			<img src="{{image}}" alt="">
+			<div class="carousel-caption"></div>
 		</div>
 	</div>
 
@@ -31,37 +33,47 @@
 </div>
 
 
-<br><br>
-
-skill
-<div class="skill">
+<div class="heading">
 	<div class="container">
-		List of the program
-		like:
-			web develop
-			and then
-			graphic design 
+		<h1>Web & Graphic Design</h1>
+		<p class="col-sm-6">As a web and graphic designer, I have developed strong design and page layout skills in addition to a solid knowledge of Web Development.</p>
 	</div>
 </div>
 
+
+<div class="wide-img">
+	<img src="/assets/gallery/img02.JPG"/>
+</div>
 <br><br>
 
-<div class="container">
-
-	<div class="row">
-		<div *ngFor="let i of [1, 2, 3, 4, 5, 1, 2, 3, 4]" class="col-sm-6 col-md-4">
-			<div class="thumbnail">
-				<img src="..." alt="...">
-				<div class="caption">
-					<h3>Thumbnail label</h3>
-					<p>...</p>
-					<p>
-						<a href="#" class="btn btn-primary" role="button">Button</a> <a
-							href="#" class="btn btn-default" role="button">Button</a>
-					</p>
-				</div>
-			</div>
-		</div>
+<div class="skill">
+	<div class="container">
+		<p-skill-icon></p-skill-icon>
 	</div>
+</div>
 
+<div class="half-img clearfix">
+	<img src="/assets/gallery/img03.JPG"/>
+	<img src="/assets/gallery/img04.JPG"/>
+</div>
+
+<br><br>
+<div class="portfolio">
+	<div class="container">
+		<p-portfolio
+			heading="Portfolio"
+			url="/assets/data/portfolio.json"
+			path="/assets/portfolio/">
+		</p-portfolio>
+	</div>
+</div>
+
+<div class="portfolio">
+	<div class="container">
+		<p-portfolio
+			heading="Gallery"
+			url="/assets/data/gallery.json"
+			path="/assets/gallery/">
+		</p-portfolio>
+	</div>
 </div>

@@ -1,0 +1,15 @@
+<h1>{{heading}}</h1>
+<div class="line-1"></div>
+
+<br>
+<div class="row">
+	<div class="col-sm-6 col-md-4" *ngFor="let img of imgs">
+		<div class="thumbnail portfolio-thumbnail">
+			<img src="{{getImagePath(img)}}" alt="{{img.alt}}">
+			<div class="caption">
+				<h3>{{img.alt}}</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="line-3"></div>

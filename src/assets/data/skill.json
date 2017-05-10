@@ -1,0 +1,104 @@
+[
+  {
+    "file": "AdobeDreamweaver",
+    "alt": "Adobe Dreamweaver",
+    "desc": "A web development IDE",
+    "iconType": "Web development"
+  },
+  {
+    "file": "AdobeIllustrator",
+    "alt": "Adobe Illustrator",
+    "desc": "Vector graphic editing software",
+    "iconType": "Design"
+  },
+  {
+    "file": "AdobeInDesign",
+    "alt": "Adobe InDesign",
+    "desc": "Desktop publishing software application",
+    "iconType": "Design"
+  },
+  {
+    "file": "AdobeMuse",
+    "alt": "Adobe Muse",
+    "desc": "A website builder software application",
+    "iconType": "Web development"
+  },
+  {
+    "file": "AdobePhotoshop",
+    "alt": "Adobe Photoshop",
+    "desc": "Photo editing and manipulation software",
+    "iconType": "Design"
+  },
+  {
+    "file": "Angular",
+    "alt": "Angular",
+    "desc": "Javascript framework",
+    "iconType": "Web development"
+  },
+  {
+    "file": "Bootstrap",
+    "alt": "Bootstrap",
+    "desc": "Web framework for design website",
+    "iconType": "Web development"
+  },
+  {
+    "file": "CSS",
+    "alt": "Css",
+    "desc": "A style sheet language for the web",
+    "iconType": "Web development"
+  },
+  {
+    "file": "Eclilpse",
+    "alt": "Eclipse",
+    "desc": "IDE",
+    "iconType": "Tool"
+  },
+  {
+    "file": "Git",
+    "alt": "git",
+    "desc": "Distributed version control system",
+    "iconType": "Tool"
+  },
+  {
+    "file": "HTML",
+    "alt": "HTML",
+    "desc": "Hypertext markup language",
+    "iconType": "Web development"
+  },
+  {
+    "file": "Java",
+    "alt": "Java",
+    "desc": "Programming language",
+    "iconType": "Programming"
+  },
+  {
+    "file": "JS",
+    "alt": "Js",
+    "desc": "Computer programming language commonly used in web browsers.",
+    "iconType": "Web development"
+  },
+  {
+    "file": "NodeJs",
+    "alt": "NodeJs",
+    "desc": "a platform built for easily building fast and scalable network applications",
+    "iconType": "Web development"
+  },
+  {
+    "file": "Sass",
+    "alt": "Sass",
+    "desc": "Css preprocessor",
+    "iconType": "Web development"
+  },
+  {
+    "file": "Typescript",
+    "alt": "Typescript",
+    "desc": "typed superset of Javascript",
+    "iconType": "Web development"
+  },
+  {
+    "file": "Webpack",
+    "alt": "Webpack",
+    "desc": "A module bundler",
+    "iconType": "Tool"
+  }
+]
