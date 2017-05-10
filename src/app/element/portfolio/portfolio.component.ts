@@ -13,6 +13,8 @@ export class Portfolio implements OnInit {
     @Input() heading: string;
     @Input() url: string;
     @Input() path: string;
+    
+    @Input() slice: number;
 
     imgs: Image[];
 
