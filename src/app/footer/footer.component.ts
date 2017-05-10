@@ -16,6 +16,6 @@ export class FooterComponent implements OnInit {
     constructor(private appService: AppSerice) { }
     
     ngOnInit(): void {
-       this.app = this.appService.getApp(); 
+       this.app = this.appService.getApp();
     }
 }

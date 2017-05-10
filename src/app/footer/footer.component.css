@@ -1,6 +1,7 @@
 .footer {
-	height: 250px;
 	background-color: #FE5000;
+	padding-top: 5px;
+	padding-bottom: 50px;
 }
 .footer .container {
 	padding-top: 50px;
@@ -12,6 +13,9 @@
 
 .footer h3, .footer p {
 	color: white;
+}
+.footer p {
+	margin: 0px;
 }
 
 
