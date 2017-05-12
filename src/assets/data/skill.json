@@ -100,5 +100,11 @@
     "alt": "Webpack",
     "desc": "A module bundler",
     "iconType": "Tool"
+  },
+  {
+    "file": "Hibernate",
+    "alt": "Hibernate",
+    "desc": "Java ORM framework",
+    "iconType": "Tool"
   }
 ]

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
+
+import { fadeInAnimation } from '../animation/core';
 
 import { HomeService } from './home.service';
 
@@ -7,13 +9,17 @@ import { HomeService } from './home.service';
     templateUrl: 'home.component.html',
     styleUrls: [
         'home.component.css'
-    ]
+    ],
+    animations: [ fadeInAnimation.fadeInWide ],
+    host: {'[@fadeInWide]': ''}
 })
 export class HomeComponent implements OnInit {
     
-    constructor(public homeService: HomeService) { }
+//    @HostBinding('@fadeInAnimation') fadeInAnimation = "";
     
     carousels: string[];
+    
+    constructor(public homeService: HomeService) { }
     
     ngOnInit(): void {
         this.carousels = this.homeService.getCarousels();

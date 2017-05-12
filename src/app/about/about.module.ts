@@ -7,6 +7,7 @@ import { ElementModule } from '../element/element.module';
 import { AboutComponent } from './about.component';
 import { MeComponent } from './me/me.component';
 import { CVComponent } from './cv/cv.component';
+import { CoverLetterComponent } from './coverletter/cover-letter.component';
 
 import { MeService } from './me/me.service';
 import { CVService } from './cv/cv.service';
@@ -15,7 +16,8 @@ import { CVService } from './cv/cv.service';
     declarations: [
         AboutComponent,
         MeComponent,
-        CVComponent
+        CVComponent,
+        CoverLetterComponent
     ],
     imports: [
         CommonModule,

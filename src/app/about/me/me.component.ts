@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 
+import { fadeInAnimation } from '../../animation/core';
+
 import { MeService } from './me.service';
 import { AboutText } from '../about.model';
 
 @Component( {
     templateUrl: 'me.component.html',
-    styleUrls: [ 'me.component.css' ]
+    styleUrls: [ 'me.component.css' ],
+    animations: [ fadeInAnimation.fadeIn ],
+    host: { '[@fadeIn]': '' }
 })
 export class MeComponent {
     meText: AboutText;
