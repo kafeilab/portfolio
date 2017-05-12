@@ -10,6 +10,9 @@
 .navbar-header > a {
 	color: white;
 }
+.navbar-header img {
+	margin-right: 10px;
+}
 
 
 .navbar-inverse .navbar-nav > li > a {
